@@ -24,8 +24,8 @@ app.use((req, res, next) => {
   });
 
 app.use('/api/music', music);
-// app.use('/api/posts', posts);
-// app.use('/api/tour', tour);
+app.use('/api/posts', posts);
+app.use('/api/tour', tour);
 
 app.get('/', (req, res) => {
     res.send('Welcome to our API!')
